@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "200575109601",
+    "project_id": "authtutorial-5d193",
+    "storage_bucket": "authtutorial-5d193.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:200575109601:android:8495c4fc0da700e34feaa0",
+        "android_client_info": {
+          "package_name": "com.example.belajar_mobile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBV2ZTVZmr-sBhrRc1lLIo031Rm1rbP8C4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

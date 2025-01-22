@@ -1,8 +1,9 @@
+import 'package:belajar_mobile/components/login_animation.dart';
 import 'package:belajar_mobile/components/my_button.dart';
 import 'package:belajar_mobile/components/my_textfield.dart';
-import 'package:belajar_mobile/components/square_tile.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+// import 'package:lottie/lottie.dart';
 
 class LoginPage extends StatefulWidget {
   final void Function()? onTap;
@@ -79,13 +80,19 @@ class _LoginPageState extends State<LoginPage> {
                       horizontal: paddingValue, vertical: 20),
                   child: Column(
                     children: [
-                      const SizedBox(height: 30),
-                      // logo
-                      const Icon(
-                        Icons.lock,
-                        size: 100,
+                      SizedBox(
+                        height: 50,
                       ),
-                      const SizedBox(height: 30),
+                      // ANIMASI logo
+
+                      // Lottie.network(
+                      //     'https://raw.githubusercontent.com/xvrh/lottie-flutter/master/example/assets/Mobilo/A.json',
+                      //     width: 200,
+                      //     height: 200),
+
+                      AnimatedHeart(),
+
+                      const SizedBox(height: 50),
                       // welcome message
                       Text(
                         'Welcome back you\'ve been missed!',
@@ -115,7 +122,6 @@ class _LoginPageState extends State<LoginPage> {
                           obscureText: true,
                         ),
                       ),
-                      const SizedBox(height: 10),
                       // forgot password link
                       MaterialButton(
                         onPressed: () {},
@@ -124,7 +130,6 @@ class _LoginPageState extends State<LoginPage> {
                           style: TextStyle(color: Colors.blue.shade700),
                         ),
                       ),
-                      const SizedBox(height: 10),
                       // sign-in button
                       ConstrainedBox(
                         constraints:
@@ -134,48 +139,7 @@ class _LoginPageState extends State<LoginPage> {
                           onTap: signInUser,
                         ),
                       ),
-                      const SizedBox(height: 30),
-                      // Or continue with section
-                      Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 25),
-                        child: Row(
-                          children: [
-                            Expanded(
-                              child: Divider(
-                                thickness: 0.5,
-                                color: Theme.of(context).colorScheme.tertiary,
-                              ),
-                            ),
-                            Padding(
-                              padding:
-                                  const EdgeInsets.symmetric(horizontal: 10),
-                              child: Text(
-                                'Or Continue With',
-                                style: TextStyle(
-                                    color:
-                                        Theme.of(context).colorScheme.tertiary),
-                              ),
-                            ),
-                            Expanded(
-                                child: Divider(
-                              thickness: 0.5,
-                              color: Theme.of(context).colorScheme.tertiary,
-                            ))
-                          ],
-                        ),
-                      ),
-                      const SizedBox(height: 25),
-                      // Google and Email sign-in buttons
-                      const Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          SquareTile(imagePath: 'lib/images/google.png'),
-                          SizedBox(width: 10),
-                          SquareTile(imagePath: 'lib/images/email.png'),
-                        ],
-                      ),
-                      const SizedBox(height: 25),
-                      // Register now section
+                      const SizedBox(height: 10),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [

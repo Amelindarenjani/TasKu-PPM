@@ -75,7 +75,7 @@ class _PomodoroPageState extends State<PomodoroPage> {
                                   color: renderColor(
                                       context, provider.currentState),
                                   fontWeight: FontWeight.w700,
-                                  fontSize: 40,
+                                  fontSize: 30,
                                 ),
                               ),
 
@@ -154,7 +154,7 @@ class _PomodoroPageState extends State<PomodoroPage> {
                                   color: renderColor(
                                       context, provider.currentState),
                                   fontWeight: FontWeight.w700,
-                                  fontSize: 40,
+                                  fontSize: 35,
                                 ),
                               ),
 

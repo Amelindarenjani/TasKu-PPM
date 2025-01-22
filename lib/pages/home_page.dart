@@ -40,7 +40,7 @@ class _HomePageState extends State<HomePage> {
         appBar: AppBar(
           backgroundColor: Colors.transparent,
           title: Text(
-            'NotApp',
+            'tasKu',
             style: TextStyle(
                 color: Theme.of(context).colorScheme.inversePrimary,
                 fontSize: 24,
@@ -54,7 +54,7 @@ class _HomePageState extends State<HomePage> {
                   color: Theme.of(context).colorScheme.primary),
               child: Text(
                 user.email!,
-                style: TextStyle(fontSize: 12),
+                style: const TextStyle(fontSize: 12),
               ),
             ),
             IconButton(

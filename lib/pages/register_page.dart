@@ -1,6 +1,6 @@
+import 'package:belajar_mobile/components/login_animation.dart';
 import 'package:belajar_mobile/components/my_button.dart';
 import 'package:belajar_mobile/components/my_textfield.dart';
-import 'package:belajar_mobile/components/square_tile.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
@@ -88,13 +88,10 @@ class _RegisterPageState extends State<RegisterPage> {
                       horizontal: paddingValue, vertical: 20),
                   child: Column(
                     children: [
-                      const SizedBox(height: 25),
-                      // logo
-                      const Icon(
-                        Icons.lock,
-                        size: 100,
-                      ),
-                      const SizedBox(height: 25),
+                      const SizedBox(height: 50),
+                      // Animation
+                      AnimatedHeart(),
+                      const SizedBox(height: 50),
                       // welcome message
                       Text(
                         'Let\'s create an account for you',
@@ -144,47 +141,8 @@ class _RegisterPageState extends State<RegisterPage> {
                           onTap: signUpUser,
                         ),
                       ),
-                      const SizedBox(height: 30),
-                      // or continue with section
-                      Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 25),
-                        child: Row(
-                          children: [
-                            Expanded(
-                              child: Divider(
-                                thickness: 0.5,
-                                color: Theme.of(context).colorScheme.tertiary,
-                              ),
-                            ),
-                            Padding(
-                              padding:
-                                  const EdgeInsets.symmetric(horizontal: 10),
-                              child: Text(
-                                'Or Continue With',
-                                style: TextStyle(
-                                    color:
-                                        Theme.of(context).colorScheme.tertiary),
-                              ),
-                            ),
-                            Expanded(
-                                child: Divider(
-                              thickness: 0.5,
-                              color: Theme.of(context).colorScheme.tertiary,
-                            ))
-                          ],
-                        ),
-                      ),
-                      const SizedBox(height: 25),
-                      // Google and Email sign-in buttons
-                      const Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          SquareTile(imagePath: 'lib/images/google.png'),
-                          SizedBox(width: 10),
-                          SquareTile(imagePath: 'lib/images/email.png'),
-                        ],
-                      ),
-                      const SizedBox(height: 25),
+                      const SizedBox(height: 10),
+
                       // Already have an account section
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,

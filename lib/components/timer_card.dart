@@ -25,7 +25,7 @@ class _TimerCardState extends State<TimerCard> {
             backgroundColor: Theme.of(context).colorScheme.inversePrimary,
             animation: true,
             animateFromLastPercent: true,
-            lineWidth: 20,
+            lineWidth: 15,
             progressColor: Theme.of(context).colorScheme.secondary,
             center: Row(
               mainAxisAlignment: MainAxisAlignment.center,
